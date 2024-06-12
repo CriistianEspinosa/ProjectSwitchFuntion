@@ -32,7 +32,7 @@ public class HelloApplication {
             break;
 
         case "b":
-            printAnyString("The program return the text do you enter");
+            printAnyString("Now you are in the option B, the program return the text do you enter");
             printAnyString("");
             String emptyString = scanner.nextLine();
             String writtenString = resultstring(emptyString);
@@ -41,6 +41,14 @@ public class HelloApplication {
             break;
 
         case "c":
+            printAnyString ("Now you are in the option C, calculate the cosin of the number");
+            printAnyString ("Enter any number:");
+            int cosinNumber = scanner.nextInt();
+            double resultCosin = cosin(cosinNumber);
+
+            printAnyString("THe cosin of "+cosinNumber+" is: "+resultCosin);
+
+            break;
 
     }
 
@@ -59,7 +67,10 @@ public class HelloApplication {
         String resultString = (emptyString);
         return resultString;
     }
-
+    public static double cosin (int cosinNumber){
+    double resultCos = Math.cos(cosinNumber);
+    return resultCos;
+}
 
 
 }
