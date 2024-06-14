@@ -43,10 +43,10 @@ public class HelloApplication {
         case "c":
             printAnyString ("Now you are in the option C, calculate the cosin of the number");
             printAnyString ("Enter any number:");
-            int cosinNumber = scanner.nextInt();
-            double resultCosin = cosin(cosinNumber);
+            int cosin = scanner.nextInt();
+            double resultCosin = cosin(cosin);
 
-            printAnyString("THe cosin of "+cosinNumber+" is: "+resultCosin);
+            printAnyString("The cosin of "+cosin+" is: "+resultCosin);
 
             break;
 
@@ -67,10 +67,9 @@ public class HelloApplication {
         String resultString = (emptyString);
         return resultString;
     }
-    public static double cosin (int cosinNumber){
-    double resultCos = Math.cos(cosinNumber);
-    return resultCos;
-}
-
+    public static double cosin (int cosin){
+    double resultCosin = Math.cos(cosin);
+    return resultCosin;
+    }
 
 }
